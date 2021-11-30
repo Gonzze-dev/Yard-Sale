@@ -1,0 +1,14 @@
+@media (max-width: 375px)
+{
+
+    .input-box
+    {
+        width: 90%;
+    }
+
+    .input-box input[type="text"], .input-box input[type="password"]
+    {
+        width: 100%;
+    }
+
+}

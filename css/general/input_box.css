@@ -1,0 +1,31 @@
+.input-box p
+{
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+
+.input-box input::placeholder
+{
+    color: var(--Very-light-pink);
+}
+
+.input-box input[type="text"], .input-box input[type="password"]
+{
+    height: 2.5rem;
+    width: 23.438rem;
+    border: none;
+    outline: none;
+    padding-left: 0.438rem;
+    background: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.input-box input[type="text"]:focus, .input-box input[type="password"]:focus
+{
+    transition: 200ms;
+    border-width: 0.063rem;
+    border-style: solid;
+    color: var(--Hospital-green);
+}

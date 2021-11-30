@@ -1,0 +1,22 @@
+.button-border-green
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.938rem;
+    width: 23.438rem;
+    font-size: 1.125rem;
+    border-width: 0.063rem;
+    border-style: solid;
+    color: var(--Hospital-green);
+    background: white;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-decoration: none;
+}
+
+.button-border-green:hover
+{
+    border-style: none;
+    color: var(--Text-input-field);
+    background-color: var(--Hospital-green);
+}

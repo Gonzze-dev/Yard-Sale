@@ -1,0 +1,10 @@
+.button-ancla
+{
+    color: var(--Hospital-green);
+    text-decoration: none;
+}
+
+.button-ancla:hover
+{
+    color: var(--Very-light-pink);
+}

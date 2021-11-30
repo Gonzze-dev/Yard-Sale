@@ -1,0 +1,40 @@
+header
+{
+    background-color: white;
+    width: 100%;
+
+    /*Sombras*/
+    box-shadow: 0rem 0.25rem 0.5rem 0rem rgb(247, 247, 247);
+    border: none;
+
+    position: fixed;
+}
+
+.flex-container-nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 3;
+}
+
+.nav-imagen-menu-container img
+{
+    margin: 0.313rem;
+    margin-left: 0.875rem;
+    width: 1.875rem;
+}
+
+.nav-imagen-logo-container img
+{
+    margin-top: 0.25rem;
+    width: 6.25rem;
+}
+
+.nav-imagen-notificaction-container img
+{
+    margin: 0.313rem;
+    margin-right: 0.875rem;
+    width: 2.313rem;
+}

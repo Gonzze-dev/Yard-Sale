@@ -1,0 +1,254 @@
+@import "general/nav.css";
+
+:root
+{
+    /* Colors */
+    --Very-light-pink:  #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+main
+{
+    padding-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box input[type="text"]
+{
+    margin-top: 0.813rem;
+    padding-left: 2.188rem;
+}
+
+.input-box input[type="text"]
+{
+    margin-top: 0.813rem;
+    padding-left: 2.188rem;
+    height: 2.5rem;
+    width: 23.438rem;
+    border: none;
+    outline: none;
+    background-color: var(--Text-input-field);
+    color: var(--Very-light-pink);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.input-box input::placeholder
+{
+    color: var(--Very-light-pink);
+}
+
+.input-box input[type="text"]:focus
+{
+    transition: 200ms;
+    border-width: 0.063rem;
+    border-style: solid;
+    color: var(--Hospital-green);
+}
+
+.src
+{
+    display: inline-block;
+    background-image: url('../assets/icons/Lupa.svg');
+    background-size: 0.875rem;
+    background-position: 0.5rem;
+    background-repeat: no-repeat;
+}
+
+.table-options-container
+{
+    display: flex;
+    margin: auto;
+    margin-top: 0.625rem;
+    overflow: hidden;
+    height: 3.313rem;
+}
+
+.option
+{
+    margin: 0.625rem;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-size: 1.125rem;
+    
+    color: var(--Very-light-pink);
+
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.option:hover
+{
+    border-width: 0.063rem;
+    border-style: solid;
+    color: var(--Hospital-green);
+    background: white;
+    transition: 250ms;
+}
+
+.select-options-container
+{
+    margin-top: 0.938rem;
+    display: flex;
+    flex-direction: row;
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-options-container .title
+{
+    margin-top: 0.094rem;
+    margin-right: 0.313rem;
+    font-size: 0.875rem;
+}
+
+.select-options
+{
+    display: inline-block;
+    margin-top: 0.1rem;
+    border: none;
+    background: transparent;
+    font-size: 0.875rem;
+    color: var(--Very-light-pink);
+    padding-right: 0.75rem;
+    background-image: url('../assets/icons/flecha_abajo.svg');
+    background-size: 0.563rem;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    appearance: none;
+}
+
+.select-options-container .select-options:focus
+{
+    outline: none;
+}
+
+.galeria-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+.item
+{
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item img
+{
+    width: 7.813rem;
+    height: 7.813rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer-item
+{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 0.875rem;
+}
+
+.item-name
+{
+    color: var(--Very-light-pink);
+}
+
+.footer-item .button-buy-item
+{
+    margin-left: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+
+    box-shadow: 0rem 0rem 0.188rem 0.063rem rgb(224, 223, 223);
+    border: none;
+}
+
+.button-buy-item
+{
+    border-radius: 50%;
+}
+
+.footer-item .button-added-item
+{
+    margin-left: 0.625rem;
+    height: 2.188rem;
+    width: 2.188rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 0.313rem 0.188rem rgb(224, 223, 223);
+    border: none;
+}
+
+.button-added-item
+{
+    border-radius: 50%;
+}
+
+@media (max-width: 570px)
+{
+    body
+    {
+        align-items: initial;
+    }
+
+    .table-options-container
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px)
+{
+    main
+    {
+        align-items: initial;
+    }
+
+    .input-box input[type="text"]
+    {
+        width: 100%;
+    }
+}

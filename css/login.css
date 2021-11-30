@@ -1,0 +1,105 @@
+@import "general/button_green.css";
+@import "general/input_box.css";
+@import "general/button_ancla.css";
+@import "general/button_border_green.css";
+
+@import "media/media_inputs.css";
+@import "media/mq_buttons.css";
+
+:root
+{
+    /* Colors */
+    --Very-light-pink:  #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.188rem;
+}
+
+
+header img
+{
+    width: 15.625rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body
+{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+}
+
+.input-box
+{
+    margin-top: 1.563rem;
+}
+
+.input-box input[type="password"]:focus
+{
+    transition: 200ms;
+    border-width: 0.063rem;
+    border-style: solid;
+    color: var(--Hospital-green);
+}
+
+.button-green
+{
+    margin-top: 3.75rem;
+}
+
+.button-ancla
+{
+    margin-top: 1.813rem;
+}
+
+.button-border-green
+{
+    margin-top: 8.75rem;
+    margin-bottom: 0.625rem;
+}
+
+@media (max-width: 375px)
+{
+
+    body
+    {
+        margin-top: 1vh;
+    }
+
+    header img
+    {
+        width: 12.5rem;
+    }
+
+    
+    
+}
+
+@media (max-width: 320px)
+{
+
+    header img
+    {
+        width: 11.25rem;
+    }
+    
+}

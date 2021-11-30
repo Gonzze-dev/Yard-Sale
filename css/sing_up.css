@@ -1,0 +1,75 @@
+@import "general/nav.css";
+@import "general/button_green.css";
+@import "general/input_box.css";
+
+@import "media/media_inputs.css";
+@import "media/mq_buttons.css";
+
+:root
+{
+    /* Colors */
+    --Very-light-pink:  #C7C7C7;
+    --Text-input-field: #F7F7F7;
+    --Hospital-green: #ACD9B2;
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 4;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Title
+{
+    align-self: baseline;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1.313rem;
+    font-weight: bold;
+}
+
+.input-box
+{
+    margin-top: 1.5rem;
+}
+
+.button-green
+{
+    margin-top: 12.5rem;
+    margin-bottom: 0.625rem;
+}
+
+@media (max-width: 375px)
+{
+
+    main
+    {
+        width: 100%;
+    }
+    
+    .Title p
+    {
+        padding-left: 0.78rem;
+    }
+}
